@@ -61,7 +61,7 @@ end
 
 -- actually traps player emotes as well, but no matter
 function SafetyDance_Filter (frame, event, msg, unit, ... )
-	--SafetyDance_Debug( unit .. " (" .. event .. "): "..msg )
+	SafetyDance_Debug( unit .. " (" .. event .. "): "..msg )
 	if (SafetyDance_Enabled) and (unit == SAFETYDANCE_BOSS) then
 		if (msg == SAFETYDANCE_MONSTER_YELL1) then
 			SafetyDance_StartSong()
